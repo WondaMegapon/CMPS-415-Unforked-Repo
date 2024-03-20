@@ -1,0 +1,23 @@
+{
+    "name": "cmps-415-unforked-repo",
+    "version": "1.0.0",
+    "description": "Let's study webhosts, together.",
+    "main": "main.js",
+    "repository": "https://github.com/WondaMegapon/CMPS-415-Unforked-Repo",
+    "author": "Wonda",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+        "start": "node main.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "cookie-parser": "^1.4.6",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.0",
+        "mongodb": "^6.5.0"
+    },
+    "engines": {
+        "node": ">=14"
+    }
+}
