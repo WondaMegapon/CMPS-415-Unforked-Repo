@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Prime";
+    src: url(prime.otf) format("opentype");
+}
+
+body {
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Prime, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.row {
+    display: flex;
+}
+
+.box {
+    padding: 2rem;
+    margin: 3rem;
+    color: white;
+    background-color: #000000aa;
+    border-radius: 2rem;
+    font-size: larger;
+}

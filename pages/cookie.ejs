@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div class="box">
+            <h1><%= (locals.title) ? title : "Cookies" %></h1>
+            <p>Here are your current cookies.</p>
+            <% if (locals.data) { %>
+                <p><%= data %></p>
+            <% } %>
+            <a href="/cookies/clear"><input type="button" value="Clear Cookies"></a>
+        </div>
+        <div class="box">
+            <span>Return home: <a href="/"><button>Home</button></a></span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div class="row">
+            <div class="box" style="flex: 50%;">
+                <h1>Returning User</h1>
+                <form action="/user/login" method="post">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" required><br>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required><br>
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+            <div class="box" style="flex: 50%;">
+                <h1>New User</h1>
+                <form action="/user/register" method="post">
+                    <label for="dusername">Desired Username</label>
+                    <input type="text" name="dusername" id="dusername" required><br>
+                    <label for="dpassword">Desired Password</label>
+                    <input type="password" name="dpassword" id="dpassword" required><br>
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+        </div>
+        <div class="box">
+            <span>View your cookies: <a href="/cookies"><button>Cookies</button></a></span>
+        </div>
+    </body>
+</html>

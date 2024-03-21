@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div class="box">
+            <h1><%= (locals.title) ? title : "Success!" %></h1>
+            <% if (locals.reason) { %>
+                <p><%= reason %></p>
+            <% } %>
+            <% if (locals.data) { %>
+                <p><%= data %></p>
+            <% } %>
+        </div>
+        <div class="box">
+            <span>Return home: <a href="/"><button>Home</button></a></span>
+            <span>View your cookies: <a href="/cookies"><button>Cookies</button></a></span>
+        </div>
+    </body>
+</html>

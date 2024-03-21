@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div class="box">
+            <h1><%= (locals.title) ? title : "404" %></h1>
+            <p>
+                You did something wrong, please <a href="/">try again</a>.<br>
+                <% if (locals.reason) { %>
+                    <p>Reason: <%= reason %></p>
+                <% } %>
+            </p>
+        </div>
+        <div class="box">
+            <span>View your cookies: <a href="/cookies"><button>Cookies</button></a></span>
+        </div>
+    </body>
+</html>
