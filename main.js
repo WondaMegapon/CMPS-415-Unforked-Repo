@@ -23,18 +23,7 @@ const mongo_collection_user = process.env.MONGO_COLLECTION_USER // The collectio
 
 // Routes!
 app.get('/', function(req, res) {
-    res.render('index')
-    // Just testing this stuff.
-    const client = new MongoClient(mongo_uri)
-    async function run() {
-        try {
-            const part = await client.db(mongo_db).collection(mongo_collection_user).findOne()
-            res.send("Managed to find %s." % JSON.stringify(part))
-        } finally {
-            await client.close()
-        }
-    }
-    run().catch(console.dir)
+    res.render('index') // Very simple.
 })
 
 // Handling registering new users. [T2]
