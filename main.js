@@ -23,7 +23,10 @@ const mongo_collection_user = process.env.MONGO_COLLECTION_USER // The collectio
 
 // Routes!
 app.get('/', function(req, res) {
-    res.render('index') // Very simple.
+    if(req.cookies.auth == "authorized")
+        res.render('cookie', {data: JSON.stringify(req.cookies)}) // Cookies~ (this was implemented last.)
+    else
+        res.render('index') // Very simple.
 })
 
 // Handling registering new users. [T2]
